@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* General Styling */
+:root {
+    font-size: 14px;
+}
+
+body {
+    color: hsl(0, 2%, 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    background-image: radial-gradient(hsl(0, 0%, 72%) .1rem, transparent .1rem);
+    background-size: 2rem 2rem;
+    background-position: center;
+}
+header {
+    flex: 1;
+}
+main {
+    flex: 1;
+}
+h1 {
+    margin: 1rem;
+    z-index: -1;
+    font-size: 5rem;
+    padding: 0 1rem;
+    letter-spacing: -.15rem;
+    transform: rotate(-6deg);
+    background-color: hsl(36, 100%, 90%);
+}
+h1:hover {
+    transform: rotate(-5deg);
+}
+h2 {
+    float: right;
+    margin: -2rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: smaller;
+    transform: rotate(6deg);
+    background-color: hsl(60, 56%, 91%);
+    padding: 1rem;
+}
+h2:hover {
+    transform: rotate(5deg);
+    opacity: .9;
+}
+footer {
+    font-size: small;
+}
+footer span:first-of-type {
+    display: inline-flex;
+    transform: scaleX(-1);
+}
+footer a {
+    text-decoration: none;
+    color: hsl(151, 30%, 65%);
+}
+footer a:hover {
+    color: hsl(164, 52%, 47%);
+}
+
