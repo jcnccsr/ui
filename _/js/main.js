@@ -4,6 +4,13 @@ const footer = document.createElement("footer");
 
 document.body.append(header, main, footer);
 
+// <header>
+const h1 = document.createElement("h1");
+h1.textContent = "Daily UI";
+
+header.append(h1);
+
+// <main>
 const list = document.createElement("ol");
 main.append(list);
 
@@ -27,6 +34,18 @@ fetch("./_/js/challenges.json")
   .catch((error) => {
     console.error("Unable to load challenges:", error);
   });
+
+// <footer>
+const p    = document.createElement("p");
+const cp   = document.createElement("span");
+const ans  = document.createElement("span");
+const link = document.createElement("a");
+link.href = "https://www.jccesar.com";
+link.textContent = "@jcnccsr";
+cp.textContent = "\u00A9";
+ans.textContent = new Date().getFullYear();
+p.append(cp, " ", ans, " ", link, ". All rights reversed.");
+footer.append(p);
 
 console.log("@jcnccsr");
 console.log("Codes for days.");

@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* General Styling */
+:root {
+  --hue-teal: hsl(164, 52%, 47%);
+  --hue-viol: hsl(271, 76%, 53%);
+  font-size: 14px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  background-image: radial-gradient(hsl(0, 0%, 72%) .1rem, transparent .1rem);
+  background-size: 2rem 2rem;
+  background-position: center;
+}
+a {
+  color: hsl(271, 76%, 53%);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--hue-teal);
+}
+
+main,
+header {
+  flex: 1;
+}
+footer {
+  font-size: small;
+}
+footer span:first-of-type {
+  display: inline-flex;
+  transform: scaleX(-1);
+}
+footer a {
+    text-decoration: none;
+    color: hsl(151, 30%, 65%);
+}
+footer a:hover {
+    color: hsl(164, 52%, 47%);
+}
