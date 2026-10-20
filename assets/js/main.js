@@ -14,7 +14,7 @@ header.append(h1);
 const list = document.createElement("ol");
 main.append(list);
 
-fetch("./_/js/challenges.json")
+fetch("./assets/js/challenges.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error(`Failed to load challenges (${response.status}).`);
